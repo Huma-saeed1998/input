@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Form</title>
+</head>
+<body>
+    <form action="#">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="First"/>
+        <br/>
+        <br/>
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="Last" required/>
+        <!--required attribute is used to mention necessary info, without filling this we can't 
+            submit the form-->
+        <br/>
+        <br/>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email"/>
+        <br/>
+        <br/>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="password"/>
+        <br/>
+        <p>Address:</p>
+        <textarea rows="7" cols="50" name="address" > 
+        </textarea>
+        <br/>
+        <br/>
+        <label for="DoB">Date of Birth</label>
+        <input type="date" id="DoB" name="date of birth"/>
+        <br/><br/>
+        <label for="contact">Contact Number</label>
+        <input type="number" id="contact" name="contact#"/>
+        <br/>
+        <p>Gender:</p>
+        <input type="radio" name="gender" id="male" value="male"/>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female"/>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other"/>
+        <label for="other">Other</label>
+        <br/><br/>
+        <label for="lang">Language</label><br/><br/>
+        <input type="checkbox" id="lang" name="language" /> Urdu <br/>
+        <input type="checkbox" id="lang" name="language" /> English <br/>
+        <input type="checkbox" id="lang" name="language" /> Punjabi <br/>
+        <input type="checkbox" id="lang" name="language" checked/> Saraiki <br/><br/>
+        <label for="submit">Submit</label>
+        <input type="submit" value="Register"/>
+    </form>
+</body>
+</html>
